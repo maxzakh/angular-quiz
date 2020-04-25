@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { QuestionsComponent } from './questions/questions.component';
 import { ResultsComponent } from './results/results.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 const appRoutes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
@@ -11,7 +12,7 @@ const appRoutes: Routes = [
 ];
 
 @NgModule({
-  declarations: [AppComponent, QuestionFormComponent, QuestionsComponent, ResultsComponent],
+  declarations: [AppComponent, QuestionFormComponent, QuestionsComponent, ResultsComponent, WelcomeComponent],
   imports: [
     RouterModule.forRoot(appRoutes),
     HttpClientModule,
