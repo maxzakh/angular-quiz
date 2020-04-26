@@ -8,7 +8,8 @@ import { QuestionsComponent } from './questions/questions.component';
 import { QuestionFormComponent } from './question-form/question-form.component';
 import { ResultsComponent } from './results/results.component';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { MatCardModule, MatButtonModule } from '@angular/material';
+import { MatCardModule } from '@angular/material/card';
+import { MatButtonModule } from '@angular/material/button';
 
 const appRoutes: Routes = [
   { path: 'welcome', component: WelcomeComponent },
