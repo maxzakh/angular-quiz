@@ -4,7 +4,7 @@
     <app-question-form [question]="quiz.questions[currentQuestionIndex]" (onChoiceMade)="updateChoice($event)">
     </app-question-form>
 
-    <button mat-button class="btn btn-success" (click)="nextOrViewResults()"
+    <button class="btn btn-success" (click)="nextOrViewResults()"
       [disabled]="!answers.values[currentQuestionIndex]">{{currentQuestionIndex === quiz.questions.length - 1 ? 'View results' : 'Next'}}</button>
   </div>
 </div>
