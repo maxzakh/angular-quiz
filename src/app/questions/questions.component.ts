@@ -9,15 +9,15 @@ import { Quiz, Answers, Choice, Question } from '../quiz.model';
 @Component({
   selector: 'app-questions',
   templateUrl: './questions.component.html',
-  styleUrls: ['./questions.component.sass'],
+  styleUrls: ['./questions.component.css'],
 })
 export class QuestionsComponent implements OnInit {
-  private quiz: Quiz;
-  private answers: Answers;
-  private questions: Question[];
-  private currentQuestionIndex: number;
+  quiz: Quiz;
+  answers: Answers;
+  questions: Question[];
+  currentQuestionIndex: number;
 
-  private showResults = false;
+  showResults = false;
 
   // inject both the active route and the questions service
   constructor(
