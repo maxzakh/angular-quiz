@@ -1,0 +1,7 @@
+a {
+    text-decoration: none;
+}
+
+.mat-button:hover {
+    background: rgba(62, 62, 241, 0.048);
+}

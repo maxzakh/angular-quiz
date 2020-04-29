@@ -1,0 +1,33 @@
+.quiz-container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.quiz-container div {
+  display: flex;
+  flex: 1 2 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.mat-card-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mat-card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mat-button:hover {
+    background: rgba(62, 62, 241, 0.048);
+}
