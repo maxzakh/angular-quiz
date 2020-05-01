@@ -5,7 +5,8 @@
   "scripts": {
     "ng": "ng",
     "predeploy": "npm run build",
-    "deploy": "ng build --prod --base-href https://maxzakh.github.io/angular-quiz/",
+    "deploy2": "ng build --prod --base-href https://maxzakh.github.io/angular-quiz/",
+    "deploy": "gh-pages -d dist/my-awesome-quiz-app",
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
