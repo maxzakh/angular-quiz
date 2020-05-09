@@ -1,0 +1,29 @@
+header {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    height: 90px;
+}
+
+header img {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    height: 64px;
+    width: 64px;
+}
+
+header img svg {
+    fill: none;
+}
+
+.main-title {
+    margin-bottom: 0;
+}
+.main-subtitle {
+    font-size: .9rem;
+    color: #4f4f4f;
+}

@@ -1,5 +1,15 @@
-<div class="quiz" *ngIf="quiz">
+<header>
+  <h1 class='main-title'>Quiz Train</h1>
+  <div class="main-subtitle">Take a quiz for fun</div>
+  <img src="../assets/Question_mark_1.svg" alt="">
+  <!-- <div class="title">Please select one of the following options:</div> -->
+</header>
 
+<div>
+  <router-outlet></router-outlet>
+</div>
+
+<!-- <div class="quiz" *ngIf="quiz">
   <div class="questions" *ngIf="!showResults">
     <app-question-form [question]="quiz.questions[currentQuestionIndex]" (onChoiceMade)="updateChoice($event)">
     </app-question-form>
@@ -7,4 +17,4 @@
     <button class="btn btn-success" (click)="nextOrViewResults()"
       [disabled]="!answers.values[currentQuestionIndex]">{{currentQuestionIndex === quiz.questions.length - 1 ? 'View results' : 'Next'}}</button>
   </div>
-</div>
+</div> -->

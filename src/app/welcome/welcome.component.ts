@@ -9,7 +9,7 @@ import { Quiz } from '../quiz.model';
   styleUrls: ['./welcome.component.css'],
 })
 export class WelcomeComponent implements OnInit {
-  quiz: Quiz[];
+  quizes: Quiz[];
 
   constructor(
     public route: ActivatedRoute,
@@ -18,7 +18,7 @@ export class WelcomeComponent implements OnInit {
 
   ngOnInit() {
     this.questionsService.getQuizzes().subscribe((quiz) => {
-      this.quiz = quiz;
+      this.quizes = quiz;
     });
   }
 }
