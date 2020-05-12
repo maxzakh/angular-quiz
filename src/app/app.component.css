@@ -1,13 +1,21 @@
+.app-root {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+}
+
 header {
     position: relative;
     display: flex;
     flex-flow: column;
     align-items: center;
     justify-content: center;
-    height: 90px;
+    height: 120px;
+    background-color: #f8f8f8;
+    box-shadow: 0 1px 2px 2px #00000033;
 }
 
-header img {
+/* header img {
     position: absolute;
     top: 50%;
     left: 0;
@@ -18,7 +26,7 @@ header img {
 
 header img svg {
     fill: none;
-}
+} */
 
 .main-title {
     margin-bottom: 0;

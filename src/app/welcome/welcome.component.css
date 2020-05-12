@@ -1,34 +1,11 @@
 .quiz-container {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: red;
+  height: 100%;
+  width: 80%;
+  margin: 1em auto 0;
 }
 
-.quiz-container div {
-  display: flex;
-  flex: 1 2 50%;
-  align-items: center;
-  justify-content: center;
-}
-
-.mat-card-title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.mat-card-actions {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-a {
-    text-decoration: none;
-}
-
-.mat-button:hover {
-    background: rgba(62, 62, 241, 0.048);
+.quiz {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1em;
 }
