@@ -1,0 +1,21 @@
+.question-form {
+    /* background-color: red; */
+    padding: 1em;
+}
+
+.question-title {
+    background: #3f51b5;
+    color: white;
+    padding: 1em;
+}
+
+.form-group {
+    display: grid;
+    gap: .6em;
+    padding-top: 1.6em;
+    padding-left: 1em;
+}
+
+label > span {
+    padding-left: .6em;
+}

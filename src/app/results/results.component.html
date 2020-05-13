@@ -1,11 +1,13 @@
-<div class="quiz-container">
+<div class="results-container">
   <div class="results">
       <h2>Results</h2>
-      <div class="answer" *ngFor="let a of answers.values; let i = index;" [ngClass]="{correct: a.correct}">
+      <div 
+        *ngFor="let a of answers.values; let i = index;" 
+        [ngClass]="{correct: a.correct}"
+        class="answer" 
+      >
         {{i+1}}: {{a.value}}
       </div>
     </div>
-  <button mat-button>
-    <a routerLink="/welcome" class="btn btn-primary">Choose another quiz</a>
-  </button>
+  <button mat-stroked-button routerLink="/welcome">Back to welcome screen</button>
 </div>

@@ -1,9 +1,15 @@
-<div class="quiz quiz-container" *ngIf="question">
-    <h1>{{question.label}}</h1>
+<div class="question-form" *ngIf="question">
+    <div class="question-title">
+        <mat-card-title>{{question.label}}</mat-card-title>
+    </div>
     <form [formGroup]="form">
         <div class="form-group">
             <label *ngFor="let choice of question.choices">
-                <input type="radio" [value]="choice" formControlName="choice">
+                <input 
+                    type="radio" 
+                    [value]="choice" 
+                    formControlName="choice"
+                >
                 <span>{{choice.value}}</span>
             </label>
         </div>

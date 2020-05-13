@@ -1,4 +1,8 @@
-.quiz-container {
+.results-container {
+  background-color: greenyellow;
+}
+
+/* .quiz-container {
   width: 15vw;
   height: 10vh;
   position: absolute;
@@ -18,4 +22,4 @@ a {
 
 .mat-button:hover {
   background: rgba(62, 62, 241, 0.048);
-}
+} */

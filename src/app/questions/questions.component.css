@@ -1,4 +1,20 @@
-.quiz {
+.question-container {
+    width: 80%;
+    margin: 1em auto 0;
+    padding-top: 1em;
+    /* background-color: gold; */
+}
+
+.questions {
+    display: grid;
+    /* background-color: rgba(0, 0, 255, 0.212); */
+}
+
+.questions button {
+    justify-self: center;
+}
+
+/* .quiz {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -15,4 +31,4 @@ a {
 
 .mat-button:hover {
     background: rgba(62, 62, 241, 0.048);
-}
+} */
