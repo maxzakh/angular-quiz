@@ -1,4 +1,7 @@
 <div class="question-form" *ngIf="question">
+    <div class="question-counter">
+        {{question.questionIdx + 1}}/{{question.totalQuestions}}
+    </div>
     <div class="question-title">
         <mat-card-title>{{question.label}}</mat-card-title>
     </div>

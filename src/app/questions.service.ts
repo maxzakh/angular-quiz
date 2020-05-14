@@ -10,6 +10,16 @@ import { Quiz, Question } from './quiz.model';
 export class QuestionsService {
   constructor(private http: HttpClient) {}
 
+  // public getQuizzes() {
+  //   return this.http.get(`./assets/quiz-list.json`).pipe(
+  //     map((result: any[]) => {
+  //       return result.map(
+  //         (r) => new Quiz(r.label, r.name, r.description, r.fileName)
+  //       );
+  //     })
+  //   );
+  // }
+
   public getQuizzes() {
     return this.http.get(`./assets/quiz-list.json`).pipe(
       map((result: any[]) => {
@@ -23,7 +33,7 @@ export class QuestionsService {
   public getQuestions(fileName: string) {
     return this.http.get(`./assets/${fileName}.json`).pipe(
       map((result: any[]) => {
-        return result.map((r) => new Question(r.label, r.choices));
+        return result.map((r, index, array) => new Question(r.label, r.choices, index, array.length));
       })
     );
   }

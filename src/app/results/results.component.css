@@ -1,5 +1,49 @@
-.results-container {
-  background-color: greenyellow;
+.results {
+  display: grid;
+  /* background-color: greenyellow; */
+}
+
+.results > button {
+  margin-top: 1em;
+  justify-self: center;
+}
+
+.results-title {
+  background: #3f51b5;
+  color: white;
+  padding: 1em;
+  margin-top: 2em;
+}
+
+.answers {
+  display: grid;
+  gap: .6em;
+  padding-top: 1.6em;
+  padding-left: 1em;
+  /* background-color: goldenrod; */
+}
+
+.answer {
+  display: flex;
+  align-items: center;
+}
+
+.answer.correct > span:first-of-type {
+  color: green;
+}
+
+/* .answer.correct::before {
+  background-color: green;
+} */
+
+.answer.incorrect > span:first-of-type {
+  color: red;
+}
+
+.answer-index {
+  display: inline-block;
+  width: 2em;
+  text-align: right;
 }
 
 /* .quiz-container {

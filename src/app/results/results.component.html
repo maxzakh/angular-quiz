@@ -1,13 +1,17 @@
-<div class="results-container">
-  <div class="results">
-      <h2>Results</h2>
-      <div 
-        *ngFor="let a of answers.values; let i = index;" 
-        [ngClass]="{correct: a.correct}"
-        class="answer" 
-      >
-        {{i+1}}: {{a.value}}
-      </div>
+<div class="results">
+  <div class="results-title">
+    <mat-card-title>Results</mat-card-title>
+  </div>
+  <div class="answers">
+    <div *ngFor="let answer of answers.values; let i = index;" 
+      [ngClass]="{ correct: answer.correct, incorrect: !answer.correct }" class="answer"
+    >
+      <span class="material-icons">
+        {{getIcon(answer.correct)}}
+      </span>
+      <span class="answer-index">{{i+1}}</span>. {{answer.value}}
     </div>
-  <button mat-stroked-button routerLink="/welcome">Back to welcome screen</button>
+  </div>
+  <!-- <i class="material-icons">face</i> -->
+  <button mat-flat-button color="primary" routerLink="/welcome">Back to welcome screen</button>
 </div>

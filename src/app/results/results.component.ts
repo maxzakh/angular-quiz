@@ -8,4 +8,8 @@ import { Answers } from '../quiz.model';
 })
 export class ResultsComponent {
   @Input() answers: Answers;
+
+  getIcon(correct: boolean): string {
+    return correct ? 'thumb_up_alt' : 'thumb_down_alt';
+  }
 }
