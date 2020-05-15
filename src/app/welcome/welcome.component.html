@@ -2,10 +2,9 @@
     <div class="quiz">
         <div *ngFor="let quiz of quizes">
             <mat-card>
-                <mat-card-title>{{quiz.label}}</mat-card-title>
-                <mat-card-subtitle>{{quiz.description}}</mat-card-subtitle>
+                <mat-card-title>{{quiz.name}}</mat-card-title>
                 <mat-card-actions>
-                    <button mat-stroked-button routerLink="/{{quiz.name}}">
+                    <button mat-stroked-button routerLink="/{{quiz.label}}">
                         Start
                     </button>
                 </mat-card-actions>
