@@ -3,7 +3,7 @@
         {{question.questionIdx + 1}}/{{question.totalQuestions}}
     </div>
     <div class="question-title">
-        <mat-card-title>{{question.label}}</mat-card-title>
+        <mat-card-title [innerHTML]="question.label"></mat-card-title>
     </div>
     <form [formGroup]="form">
         <div class="form-group">
@@ -13,7 +13,7 @@
                     [value]="choice" 
                     formControlName="choice"
                 >
-                <span>{{choice.value}}</span>
+                <span [innerHTML]="choice.value"></span>
             </label>
         </div>
     </form>
